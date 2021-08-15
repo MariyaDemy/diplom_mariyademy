@@ -279,13 +279,13 @@ button {
     margin-left: 4rem; }
 
 .first-section {
-  background-image: url("./assets/imgs/rings.png");
+  background-image: url("../imgs/rings.png");
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
   max-height: 130.0rem; }
   .first-section::after {
-    content: url("./assets/imgs/wave1.png");
+    content: url("../imgs/wave1.png");
     position: absolute;
     bottom: 0;
     z-index: -1; }

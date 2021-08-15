@@ -1,6 +1,6 @@
 .first-section {
 
-    background-image: url("./assets/imgs/rings.png");
+    background-image: url("../imgs/rings.png");
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -10,7 +10,7 @@
     
 
     &::after {
-        content: url("./assets/imgs/wave1.png");
+        content: url("../imgs/wave1.png");
         position: absolute;
         bottom: 0;
         z-index: -1;
