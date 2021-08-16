@@ -344,3 +344,26 @@ button {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.footer {
+  margin-top: 16.4rem; }
+  .footer__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; }
+  .footer__text {
+    font-size: 1.6rem;
+    line-height: 140%;
+    font-weight: 400;
+    color: c-text; }
+
+.link-footer {
+  font-size: 1.6rem;
+  line-height: 140%;
+  font-weight: 400;
+  color: c-text;
+  margin-right: 2.4rem; }
+
+.socials__icon {
+  margin-right: 2.8rem; }

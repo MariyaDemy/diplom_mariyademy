@@ -1,0 +1,39 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.footer {
+
+    margin-top: 16.4rem;
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    &__text {
+        font-size: 1.6rem;
+        line-height: 140%;
+        font-weight: 400;
+        color: c-text;
+
+        
+    }
+}
+
+.link-footer {
+    font-size: 1.6rem;
+    line-height: 140%;
+    font-weight: 400;
+    color: c-text;
+
+    margin-right: 2.4rem;
+}
+
+.socials {
+    &__icon {
+        margin-right: 2.8rem;
+    }
+}
