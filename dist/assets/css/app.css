@@ -283,12 +283,15 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  max-height: 130.0rem; }
+  max-height: 130.0rem;
+  z-index: 0;
+  max-height: 109.6rem;
+  overflow: hidden; }
   .first-section::after {
     content: url("../imgs/wave1.png");
     position: absolute;
-    bottom: 7.1rem;
-    z-index: -1; }
+    bottom: -0.9rem;
+    z-index: 1; }
   .first-section__content {
     display: flex;
     flex-direction: column;
@@ -303,7 +306,6 @@ button {
     color: #222222;
     display: inline-block;
     max-width: 93.1rem;
-    margin: 0 auto;
     margin-bottom: 1.4rem; }
   .first-section__text {
     font-size: 2.2rem;
@@ -328,7 +330,8 @@ button {
   .first-section__img-wrap {
     margin: 0 auto;
     position: relative;
-    bottom: 0; }
+    bottom: 0;
+    z-index: 2; }
 
 .link-logo {
   margin-right: 0.8rem; }
@@ -345,9 +348,72 @@ button {
   align-items: center;
   justify-content: center; }
 
+.see-what {
+  background: linear-gradient(180deg, #FFF7E0 0%, #FFFFFF 100%); }
+  .see-what__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 50.7rem;
+    margin: 25.3rem auto 0; }
+  .see-what__title {
+    font-size: 4.8rem;
+    line-height: 110%;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 1rem; }
+  .see-what__text {
+    font-size: 1.8rem;
+    line-height: 140%;
+    font-weight: 400;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 8.6rem; }
+  .see-what__example-wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-height: 330.2rem; }
+
+.example {
+  max-width: 40.2rem;
+  margin-right: 12.7rem;
+  padding-bottom: 10.4rem; }
+  .example__img {
+    margin-bottom: 1.3rem; }
+  .example__title {
+    font-size: 2.2rem;
+    line-height: 130%;
+    color: #222222;
+    margin-bottom: 1.1rem; }
+  .example__author {
+    margin-bottom: 1.6rem; }
+  .example__text {
+    margin-bottom: 2rem; }
+  .example__author, .example__text, .example__start, .example__date, .example__btn {
+    font-size: 1.6rem;
+    line-height: 140%;
+    color: #555555; }
+  .example__start {
+    color: #98A3B6;
+    margin-right: 0.8rem; }
+  .example__date {
+    color: #000;
+    margin-right: 2.4rem; }
+  .example__btn {
+    color: #222222;
+    text-transform: uppercase;
+    background: #FFEDC2;
+    border-radius: 0.8rem;
+    padding: 1.6rem 3.4rem; }
+
 .become {
   background-image: url("../imgs/rings2.png");
-  max-height: 52.7rem; }
+  background-size: cover;
+  min-height: 52.7rem;
+  background-repeat: no-repeat; }
   .become__content {
     display: flex;
     flex-direction: column;

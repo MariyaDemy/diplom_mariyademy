@@ -10,13 +10,16 @@
     position: relative;
     // max-height: 114.3rem;
     max-height: 130.0rem;
+    z-index: 0;
+    max-height: 109.6rem;
+    overflow: hidden;
     
 
     &::after {
         content: url("../imgs/wave1.png");
         position: absolute;
-        bottom: 7.1rem;
-        z-index: -1;
+        bottom: -0.9rem;
+        z-index: 1;
         
     }
 
@@ -40,7 +43,7 @@
 
         display: inline-block;
         max-width: 93.1rem;
-        margin: 0 auto;
+       
         margin-bottom: 1.4rem;
     }
 
@@ -70,17 +73,12 @@
         margin-bottom: 8.8rem;
     }
     
-    &__img {
-        
-        
-        
-    
-    }
 
     &__img-wrap {
         margin: 0 auto;
         position: relative;
         bottom: 0;
+        z-index: 2;
     }
 }
 

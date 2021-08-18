@@ -1,7 +1,12 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
 .become {
 
     background-image: url("../imgs/rings2.png");
-    max-height: 52.7rem;
+    background-size: cover;
+    min-height: 52.7rem;
+    background-repeat: no-repeat;
 
     &__content {
         display: flex;
