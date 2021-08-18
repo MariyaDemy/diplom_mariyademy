@@ -15,7 +15,7 @@
     &::after {
         content: url("../imgs/wave1.png");
         position: absolute;
-        bottom: 0;
+        bottom: 7.1rem;
         z-index: -1;
         
     }
@@ -26,8 +26,6 @@
         margin-top: 20.8rem;
 
         max-height: 114.3rem;
-
-    
         
     }
 
@@ -73,14 +71,17 @@
     }
     
     &__img {
-        margin: 0 auto;
-        position: relative;
-        bottom: 0;
+        
+        
         
     
     }
 
-
+    &__img-wrap {
+        margin: 0 auto;
+        position: relative;
+        bottom: 0;
+    }
 }
 
 .link-logo {
@@ -101,7 +102,5 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    
 
 }

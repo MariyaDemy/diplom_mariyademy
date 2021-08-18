@@ -287,7 +287,7 @@ button {
   .first-section::after {
     content: url("../imgs/wave1.png");
     position: absolute;
-    bottom: 0;
+    bottom: 7.1rem;
     z-index: -1; }
   .first-section__content {
     display: flex;
@@ -325,7 +325,7 @@ button {
     padding: 1.6rem 3.2rem;
     margin: 0 auto;
     margin-bottom: 8.8rem; }
-  .first-section__img {
+  .first-section__img-wrap {
     margin: 0 auto;
     position: relative;
     bottom: 0; }
@@ -345,6 +345,40 @@ button {
   align-items: center;
   justify-content: center; }
 
+.become {
+  background-image: url("../imgs/rings2.png");
+  max-height: 52.7rem; }
+  .become__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .become__img {
+    max-width: 17.6rem;
+    max-height: 17.6rem;
+    margin-bottom: 2.7rem; }
+  .become__title {
+    font-size: 5.5rem;
+    line-height: 112%;
+    font-weight: 700;
+    letter-spacing: 1.16667px;
+    color: #222222;
+    margin-bottom: 6.8rem;
+    position: relative; }
+    .become__title::after {
+      content: url("../imgs/become-line.svg");
+      position: absolute;
+      bottom: -4rem;
+      left: 26rem; }
+  .become__btn {
+    font-size: 1.6rem;
+    line-height: 140%;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    padding: 1.5rem 3.2rem;
+    background-color: #FFD338;
+    border-radius: 0.8rem; }
+
 .footer {
   margin-top: 16.4rem; }
   .footer__row {
@@ -356,13 +390,13 @@ button {
     font-size: 1.6rem;
     line-height: 140%;
     font-weight: 400;
-    color: c-text; }
+    color: #222222; }
 
 .link-footer {
   font-size: 1.6rem;
   line-height: 140%;
   font-weight: 400;
-  color: c-text;
+  color: #222222;
   margin-right: 2.4rem; }
 
 .socials__icon {
