@@ -416,7 +416,7 @@ button {
     padding: 1.6rem 3.4rem; }
 
 .series__content {
-  margin-bottom: 23.2rem; }
+  margin-bottom: 15.2rem; }
 
 .series__title {
   font-weight: 700;
@@ -511,6 +511,68 @@ button {
     text-align: center;
     color: #000;
     margin: 0 0 5.7rem; }
+
+.what-can-do {
+  background: linear-gradient(180deg, #FDE6E6 0%, #FFFFFF 100%);
+  position: relative; }
+  .what-can-do::before {
+    content: url("../imgs/wave2.png");
+    position: absolute;
+    top: -5rem; }
+  .what-can-do__content {
+    max-width: 90.7rem;
+    margin: 10.8rem auto 0; }
+  .what-can-do__title {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #222222;
+    margin: 0 0 2.9rem; }
+  .what-can-do__text {
+    font-size: 1.8rem;
+    line-height: 140%;
+    text-align: center;
+    color: #222222;
+    max-width: 58.8rem;
+    margin: 0 auto 10.4rem; }
+  .what-can-do__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .what-can-do__link {
+    font-size: 1.6rem;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+    background: #FFF2CD;
+    border-radius: 0.8rem;
+    padding: 1.6rem 6.4rem 1.6rem 3.2rem;
+    display: block;
+    max-width: 20.8rem;
+    margin: 0 auto 29.7rem; }
+
+.feature {
+  width: 33.3333%;
+  padding: 0 4rem;
+  margin: 0 0 12.8rem; }
+  .feature__img {
+    margin: 0 auto; }
+  .feature__title {
+    font-size: 2.2rem;
+    line-height: 130%;
+    text-align: center;
+    color: #222222;
+    margin: 2.4rem 0 1.2rem; }
+  .feature__description {
+    font-size: 1.6rem;
+    line-height: 140%;
+    text-align: center;
+    color: #555555;
+    max-width: 26.6rem;
+    margin: 0 auto; }
 
 .become {
   background-image: url("../imgs/rings2.png");

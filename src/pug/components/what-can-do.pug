@@ -1,0 +1,15 @@
+section.what-can-do 
+    .container 
+        .what-can-do__content 
+            h2.what-can-do__title What can Superpeer do for you?
+            p.what-can-do__text Turn your audience into loyal, paying followers with our seamless video experience and subscriber management tools.
+        .what-can-do__row
+            mixin feature(img, title, description)
+                .feature 
+                    img(src=img, alt=title).feature__img
+                    .feature__title=title 
+                    .feature__description=description 
+            +feature('./assets/imgs/feature1.png','Engage with your audience','Connect with your subscribers through interactive livestreams, 1:1s, and our newest feature, Series.')
+            +feature('./assets/imgs/feature2.png','Manage easier','We take care of scheduling, payments, and protecting your privacy, so that you don’t have to.')
+            +feature('./assets/imgs/feature3.png','Earn, your way',"Set your own rates and earn revenue through weekly livestreams, channel subscriptions, and even donations.")
+        a(href="#").what-can-do__link All Features
