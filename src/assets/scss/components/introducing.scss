@@ -1,0 +1,92 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+
+.introducing {
+    background: linear-gradient(180deg, #E4DDFF 0%, rgba(255, 255, 255, 0) 100%);
+    position: relative;
+
+    &::before {
+        content: url("../imgs/wave3.png");
+        position: absolute;
+        top: -5rem;
+    }
+
+    &__content {
+
+        max-width: 85rem;
+        margin: 12rem auto 0;
+    }
+
+    &__title {
+        font-size: 4.8rem;
+        font-weight: 700;
+        line-height: 110%;
+        text-align: center;
+        letter-spacing: 1px;
+        color: $c-text;
+
+        &::after {
+            content: url("../imgs/line3.svg");
+            position: absolute;
+            top: 18.5rem;
+            right: 38rem;
+
+        }
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        line-height: 140%;
+        text-align: center;
+        color: $c-text;
+
+        max-width: 61.4rem;
+        margin: 6.4rem auto 9.4rem;
+    }
+
+    &__img-wrap {
+
+        max-width: 88rem;
+        margin: 0 auto 6.66rem;
+
+    }
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 0 25rem;
+    }
+}
+
+.item {
+
+    width: 33.3333%;
+    padding: 0 3rem;
+    
+    &__img {
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 2.2rem;
+        font-weight: 700;
+        line-height: 130%;
+        text-align: center;
+        color: $c-text;
+
+        margin: 2.3rem 0 1.3rem;
+    }
+
+    &__description {
+        font-size: 1.6rem;
+        line-height: 140%;
+        text-align: center;
+        color: $c-text2;
+
+        max-width: 26.7rem;
+        margin: 0 auto;
+    }
+}
+

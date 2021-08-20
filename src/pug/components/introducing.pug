@@ -1,0 +1,17 @@
+section.introducing 
+    .container 
+        .introducing__content 
+            h2.introducing__title Introducing Superpeer Series
+            p.introducing__text With series, you can create and sell any combination of on-demand video and live stream content. With cohort-based classes you can interact with your audience in a more engaging way.
+        .introducing__img-wrap 
+            img(src="./assets/imgs/page.png", alt="personal page")
+        .introducing__row
+            mixin item(img, title, description)
+                .item 
+                    img(src=img, alt=title).item__img
+                    .item__title=title 
+                    .item__description=description 
+            +item('./assets/imgs/item1.png','Customize the content','Organize your live streams, pre-recorded videos, and hosted events into purchasable content packages for your audience.')
+            +item('./assets/imgs/item2.png','Set the pace', 'Series can be cohort-based for engaging group discussions or even on-demand for the self-paced learner.')
+            +item('./assets/imgs/item3.png','Immerse the audience',"Participants can chat with each other, send private messages, and raise a hand to be brought up on the stage during live events.")
+        

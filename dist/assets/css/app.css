@@ -344,6 +344,7 @@ button {
   position: fixed;
   bottom: 30rem;
   right: 4rem;
+  z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -540,7 +541,8 @@ button {
   .what-can-do__row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; }
+    justify-content: space-between;
+    margin: 0 0 12.8rem; }
   .what-can-do__link {
     font-size: 1.6rem;
     line-height: 140%;
@@ -572,6 +574,64 @@ button {
     text-align: center;
     color: #555555;
     max-width: 26.6rem;
+    margin: 0 auto; }
+
+.introducing {
+  background: linear-gradient(180deg, #E4DDFF 0%, rgba(255, 255, 255, 0) 100%);
+  position: relative; }
+  .introducing::before {
+    content: url("../imgs/wave3.png");
+    position: absolute;
+    top: -5rem; }
+  .introducing__content {
+    max-width: 85rem;
+    margin: 12rem auto 0; }
+  .introducing__title {
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #222222; }
+    .introducing__title::after {
+      content: url("../imgs/line3.svg");
+      position: absolute;
+      top: 18.5rem;
+      right: 38rem; }
+  .introducing__text {
+    font-size: 1.8rem;
+    line-height: 140%;
+    text-align: center;
+    color: #222222;
+    max-width: 61.4rem;
+    margin: 6.4rem auto 9.4rem; }
+  .introducing__img-wrap {
+    max-width: 88rem;
+    margin: 0 auto 6.66rem; }
+  .introducing__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 25rem; }
+
+.item {
+  width: 33.3333%;
+  padding: 0 3rem; }
+  .item__img {
+    margin: 0 auto; }
+  .item__title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 130%;
+    text-align: center;
+    color: #222222;
+    margin: 2.3rem 0 1.3rem; }
+  .item__description {
+    font-size: 1.6rem;
+    line-height: 140%;
+    text-align: center;
+    color: #555555;
+    max-width: 26.7rem;
     margin: 0 auto; }
 
 .become {
