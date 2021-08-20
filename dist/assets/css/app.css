@@ -247,17 +247,17 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    padding: 0 2.4rem; }
   .header__links {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 3rem; }
+    margin-right: 4rem; }
   .header__registration {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    margin-right: 5rem; }
+    justify-content: flex-end; }
 
 .link-header__img {
   margin-right: 0.8rem; }
@@ -283,7 +283,6 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  max-height: 130.0rem;
   z-index: 0;
   max-height: 109.6rem;
   overflow: hidden; }
@@ -305,7 +304,7 @@ button {
     letter-spacing: 1px;
     color: #222222;
     display: inline-block;
-    max-width: 93.1rem;
+    max-width: 106rem;
     margin-bottom: 1.4rem; }
   .first-section__text {
     font-size: 2.2rem;
@@ -343,7 +342,7 @@ button {
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.06);
   position: fixed;
   bottom: 30rem;
-  right: 4rem;
+  right: 2rem;
   z-index: 3;
   display: flex;
   align-items: center;
@@ -376,12 +375,13 @@ button {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-height: 330.2rem;
+    max-height: 333.2rem;
     margin-bottom: 11rem; }
 
 .example {
-  max-width: 40.2rem;
-  margin-right: 12.7rem;
+  max-width: 41.2rem;
+  margin-right: 6.7rem;
+  margin-left: 5rem;
   padding-bottom: 10.4rem; }
   .example__img {
     margin-bottom: 1.3rem; }
@@ -442,7 +442,8 @@ button {
   .series__img-wrap::after {
     content: url("../imgs/line2.svg");
     position: absolute;
-    top: -7.4rem; }
+    top: -7.4rem;
+    right: -7rem; }
 
 .qa-block {
   background-color: #fff;
@@ -500,7 +501,8 @@ button {
     margin: 0 auto; }
 
 .details {
-  column-count: 2; }
+  column-count: 2;
+  padding: 0rem 9rem; }
   .details__title {
     font-size: 1.2rem;
     line-height: 140%;
@@ -530,7 +532,7 @@ button {
     text-align: center;
     letter-spacing: 1px;
     color: #222222;
-    margin: 0 0 2.9rem; }
+    margin: 0 0 3.4rem; }
   .what-can-do__text {
     font-size: 1.8rem;
     line-height: 140%;
@@ -541,8 +543,7 @@ button {
   .what-can-do__row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 0 12.8rem; }
+    justify-content: space-between; }
   .what-can-do__link {
     font-size: 1.6rem;
     line-height: 140%;
@@ -551,10 +552,10 @@ button {
     color: #222222;
     background: #FFF2CD;
     border-radius: 0.8rem;
-    padding: 1.6rem 6.4rem 1.6rem 3.2rem;
+    padding: 1.6rem 4.8rem 1.5rem 2.4rem;
     display: block;
     max-width: 20.8rem;
-    margin: 0 auto 29.7rem; }
+    margin: 0 auto 28.7rem; }
 
 .feature {
   width: 33.3333%;
@@ -576,6 +577,57 @@ button {
     max-width: 26.6rem;
     margin: 0 auto; }
 
+.feedback__wrapper {
+  background: linear-gradient(180deg, #FFFAEC 0%, rgba(255, 255, 255, 0) 100%);
+  max-width: 136rem;
+  margin: 0 auto; }
+
+.feedback__content {
+  max-width: 102.6rem;
+  padding: 8.7rem 0 0;
+  margin: 0 0 27.8rem; }
+
+.feedback__title {
+  font-size: 4.8rem;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #222222;
+  position: relative;
+  z-index: 0;
+  margin: 0 auto 10.9rem; }
+  .feedback__title::before {
+    content: url("../imgs/quotes.svg");
+    position: absolute;
+    right: 44rem;
+    top: -3rem;
+    z-index: -1; }
+
+.feedback__text {
+  font-size: 3.2rem;
+  line-height: 125%;
+  text-align: center;
+  color: #222222;
+  max-width: 72.5rem;
+  margin: 0 auto 8.5rem; }
+
+.feedback__img {
+  display: block;
+  max-width: 6.4rem;
+  margin: 0 auto 2rem; }
+
+.feedback__author {
+  font-size: 1.6rem;
+  line-height: 140%;
+  text-align: center;
+  color: #222222; }
+
+.feedback__author-position {
+  font-size: 1.2rem;
+  line-height: 140%;
+  text-align: center;
+  color: #222222; }
+
 .introducing {
   background: linear-gradient(180deg, #E4DDFF 0%, rgba(255, 255, 255, 0) 100%);
   position: relative; }
@@ -585,7 +637,7 @@ button {
     top: -5rem; }
   .introducing__content {
     max-width: 85rem;
-    margin: 12rem auto 0; }
+    margin: 11rem auto 0; }
   .introducing__title {
     font-size: 4.8rem;
     font-weight: 700;
@@ -596,15 +648,15 @@ button {
     .introducing__title::after {
       content: url("../imgs/line3.svg");
       position: absolute;
-      top: 18.5rem;
-      right: 38rem; }
+      top: 17.5rem;
+      right: 36rem; }
   .introducing__text {
     font-size: 1.8rem;
     line-height: 140%;
     text-align: center;
     color: #222222;
     max-width: 61.4rem;
-    margin: 6.4rem auto 9.4rem; }
+    margin: 7rem auto 9.4rem; }
   .introducing__img-wrap {
     max-width: 88rem;
     margin: 0 auto 6.66rem; }
@@ -612,7 +664,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 0 25rem; }
+    margin: 0 0 24rem; }
 
 .item {
   width: 33.3333%;
@@ -638,7 +690,8 @@ button {
   background-image: url("../imgs/rings2.png");
   background-size: cover;
   min-height: 52.7rem;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  object-fit: cover; }
   .become__content {
     display: flex;
     flex-direction: column;
@@ -646,20 +699,21 @@ button {
   .become__img {
     max-width: 17.6rem;
     max-height: 17.6rem;
-    margin-bottom: 2.7rem; }
+    margin-top: 2rem; }
   .become__title {
     font-size: 5.5rem;
     line-height: 112%;
     font-weight: 700;
     letter-spacing: 1.16667px;
     color: #222222;
-    margin-bottom: 6.8rem;
+    margin-bottom: 7.6rem;
+    margin-top: 2.4rem;
     position: relative; }
     .become__title::after {
       content: url("../imgs/become-line.svg");
       position: absolute;
       bottom: -4rem;
-      left: 26rem; }
+      left: 28rem; }
   .become__btn {
     font-size: 1.6rem;
     line-height: 140%;
@@ -671,7 +725,7 @@ button {
     border-radius: 0.8rem; }
 
 .footer {
-  margin-top: 16.4rem; }
+  margin: 15.4rem 0 10rem; }
   .footer__row {
     display: flex;
     flex-wrap: wrap;
@@ -690,5 +744,7 @@ button {
   color: #222222;
   margin-right: 2.4rem; }
 
-.socials__icon {
-  margin-right: 2.8rem; }
+.socials {
+  margin-right: 15rem; }
+  .socials__icon {
+    margin-right: 2.8rem; }

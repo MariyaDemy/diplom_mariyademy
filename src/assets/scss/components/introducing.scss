@@ -15,7 +15,7 @@
     &__content {
 
         max-width: 85rem;
-        margin: 12rem auto 0;
+        margin: 11rem auto 0;
     }
 
     &__title {
@@ -29,8 +29,8 @@
         &::after {
             content: url("../imgs/line3.svg");
             position: absolute;
-            top: 18.5rem;
-            right: 38rem;
+            top: 17.5rem;
+            right: 36rem;
 
         }
     }
@@ -42,7 +42,7 @@
         color: $c-text;
 
         max-width: 61.4rem;
-        margin: 6.4rem auto 9.4rem;
+        margin: 7rem auto 9.4rem;
     }
 
     &__img-wrap {
@@ -56,7 +56,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin: 0 0 25rem;
+        margin: 0 0 24rem;
     }
 }
 

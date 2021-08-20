@@ -7,6 +7,7 @@
     background-size: cover;
     min-height: 52.7rem;
     background-repeat: no-repeat;
+    object-fit: cover;
 
     &__content {
         display: flex;
@@ -16,7 +17,7 @@
     &__img {
         max-width: 17.6rem;
         max-height: 17.6rem;
-        margin-bottom: 2.7rem;
+        margin-top: 2rem;
     }
 
     &__title {
@@ -25,7 +26,8 @@
         font-weight: 700;
         letter-spacing: 1.16667px;
         color: $c-text;
-        margin-bottom: 6.8rem;
+        margin-bottom: 7.6rem;
+        margin-top: 2.4rem;
 
         position: relative;
 
@@ -33,7 +35,7 @@
             content: url("../imgs/become-line.svg");
             position: absolute;
             bottom: -4rem;
-            left: 26rem;
+            left: 28rem;
     
         }
     }

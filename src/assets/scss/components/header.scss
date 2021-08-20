@@ -17,6 +17,7 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+        padding: 0 2.4rem;
 
     }
 
@@ -24,14 +25,13 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-right: 3rem;
+        margin-right: 4rem;
     }
 
     &__registration {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        margin-right: 5rem;
     }
     
 }

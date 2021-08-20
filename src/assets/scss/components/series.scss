@@ -38,6 +38,7 @@
                 content: url("../imgs/line2.svg");
                 position: absolute;
                 top: -7.4rem;
+                right: -7rem;
                
             }
     }
@@ -133,6 +134,7 @@
 
 .details {
     column-count: 2;
+    padding: 0rem 9rem;
 
     &__title {
         font-size: 1.2rem;
