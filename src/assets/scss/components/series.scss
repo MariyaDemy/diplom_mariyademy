@@ -1,0 +1,156 @@
+@import "../utils/parameters";
+@import "../utils/mixins";
+
+.series {
+
+    &__content {
+        margin-bottom: 23.2rem;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 4.8rem;
+        line-height: 110%;
+        text-align: center;
+        letter-spacing: 1px;
+        color: $c-text;
+
+        margin: 0 auto;
+        margin-bottom: 7.4rem;
+        position: relative;
+
+            &::after {
+                content: url("../imgs/line1.svg");
+                position: absolute;
+                bottom: -4.5rem;
+                left: 21rem;
+            }
+    }
+
+    &__img-wrap {
+
+        position: relative;        
+        max-width: 83.4rem;
+        margin: 0 auto;
+        
+
+            &::after {
+                content: url("../imgs/line2.svg");
+                position: absolute;
+                top: -7.4rem;
+               
+            }
+    }
+
+    
+}
+
+.qa-block {
+
+    background-color: #fff;
+    border-radius: 2.4rem;
+    position: relative;
+    top: -7rem;
+    z-index: 1;
+    max-width: 67.4rem;
+    margin: 0 auto;
+
+    &__img-wrap {
+        max-width: 8.6rem;
+        margin: 0 auto 0.4rem;
+    }
+
+    &__img1 {
+
+                        
+        max-width: 8.6rem;
+        margin: 3.1rem auto 2.4rem;
+                                    
+    }
+
+    &__img2 {
+
+        display: block;        
+        max-width: 2.4rem;
+        margin: 0 auto;
+    }
+
+    &__content {
+        max-width: 57.9rem;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-size: 2.2rem;
+        line-height: 130%;
+        font-weight: 400;
+        text-align: center;
+        color: $c-text;
+
+        margin: 0 0 3.3rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 21.1rem;
+            left: 29rem;
+            background: #EEEEEE;
+            height: 1px;
+            width: 10.7rem;
+            
+            
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        color: $c-text2;
+
+        margin: 0 0 2.25rem;
+
+    }
+
+    &__btn {
+        font-size: 1.6rem;
+        line-height: 140%;
+        text-align: center;
+        text-transform: uppercase;
+        color: $c-text;
+
+        padding: 1.6rem 3.4rem;
+        background-color: #FFF2CD;
+        border-radius: 0.8rem;
+
+        display: block;
+        max-width: 15rem;
+        margin: 0 auto;
+    }
+
+
+}
+
+.details {
+    column-count: 2;
+
+    &__title {
+        font-size: 1.2rem;
+        line-height: 140%;
+        text-align: center;
+        color: #98A3B6;
+    }
+    &__text {
+        font-size: 1.6rem;
+        line-height: 140%;
+        text-align: center;
+        color: #000;
+
+        margin: 0 0 5.7rem;
+
+    }
+}
+
+       
+
+        

@@ -354,7 +354,7 @@ button {
     display: flex;
     flex-direction: column;
     max-width: 50.7rem;
-    margin: 25.3rem auto 0; }
+    margin: 24.3rem auto 0; }
   .see-what__title {
     font-size: 4.8rem;
     line-height: 110%;
@@ -375,7 +375,8 @@ button {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-height: 330.2rem; }
+    max-height: 330.2rem;
+    margin-bottom: 11rem; }
 
 .example {
   max-width: 40.2rem;
@@ -386,12 +387,17 @@ button {
   .example__title {
     font-size: 2.2rem;
     line-height: 130%;
+    font-weight: 400;
     color: #222222;
-    margin-bottom: 1.1rem; }
+    margin-bottom: 1.1rem;
+    text-align: center; }
   .example__author {
-    margin-bottom: 1.6rem; }
+    margin-bottom: 1.6rem;
+    text-align: center; }
   .example__text {
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+    text-align: center;
+    max-width: 39.3rem; }
   .example__author, .example__text, .example__start, .example__date, .example__btn {
     font-size: 1.6rem;
     line-height: 140%;
@@ -408,6 +414,103 @@ button {
     background: #FFEDC2;
     border-radius: 0.8rem;
     padding: 1.6rem 3.4rem; }
+
+.series__content {
+  margin-bottom: 23.2rem; }
+
+.series__title {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #222222;
+  margin: 0 auto;
+  margin-bottom: 7.4rem;
+  position: relative; }
+  .series__title::after {
+    content: url("../imgs/line1.svg");
+    position: absolute;
+    bottom: -4.5rem;
+    left: 21rem; }
+
+.series__img-wrap {
+  position: relative;
+  max-width: 83.4rem;
+  margin: 0 auto; }
+  .series__img-wrap::after {
+    content: url("../imgs/line2.svg");
+    position: absolute;
+    top: -7.4rem; }
+
+.qa-block {
+  background-color: #fff;
+  border-radius: 2.4rem;
+  position: relative;
+  top: -7rem;
+  z-index: 1;
+  max-width: 67.4rem;
+  margin: 0 auto; }
+  .qa-block__img-wrap {
+    max-width: 8.6rem;
+    margin: 0 auto 0.4rem; }
+  .qa-block__img1 {
+    max-width: 8.6rem;
+    margin: 3.1rem auto 2.4rem; }
+  .qa-block__img2 {
+    display: block;
+    max-width: 2.4rem;
+    margin: 0 auto; }
+  .qa-block__content {
+    max-width: 57.9rem;
+    margin: 0 auto; }
+  .qa-block__title {
+    font-size: 2.2rem;
+    line-height: 130%;
+    font-weight: 400;
+    text-align: center;
+    color: #222222;
+    margin: 0 0 3.3rem; }
+    .qa-block__title::after {
+      content: '';
+      position: absolute;
+      top: 21.1rem;
+      left: 29rem;
+      background: #EEEEEE;
+      height: 1px;
+      width: 10.7rem; }
+  .qa-block__text {
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #555555;
+    margin: 0 0 2.25rem; }
+  .qa-block__btn {
+    font-size: 1.6rem;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+    padding: 1.6rem 3.4rem;
+    background-color: #FFF2CD;
+    border-radius: 0.8rem;
+    display: block;
+    max-width: 15rem;
+    margin: 0 auto; }
+
+.details {
+  column-count: 2; }
+  .details__title {
+    font-size: 1.2rem;
+    line-height: 140%;
+    text-align: center;
+    color: #98A3B6; }
+  .details__text {
+    font-size: 1.6rem;
+    line-height: 140%;
+    text-align: center;
+    color: #000;
+    margin: 0 0 5.7rem; }
 
 .become {
   background-image: url("../imgs/rings2.png");
