@@ -126,7 +126,28 @@
 }
 
 @media screen and (max-width: $sm) {
+    .first-section {
 
+        &__content {
+            margin-top: 16.8rem;
+            max-height: 53.3rem;
+        }
+
+        &__title {
+            font-size: 3.4rem;
+        }
+
+        &__text {
+            font-size: 1.8rem;
+            max-width: unset;
+            padding: 0 10rem;
+            margin-bottom: 3.3rem;
+        }
+
+        &__link {
+            margin-bottom: 5.8rem;
+        }
+    }
 }
 
 @media screen and (max-width: $xs) {

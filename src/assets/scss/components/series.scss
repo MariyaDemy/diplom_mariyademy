@@ -176,14 +176,47 @@
     .series {
 
         &__content {
-            margin-bottom: 9.2rem;
+            margin-bottom: 3.2rem;
+        }
+
+        &__img-wrap {
+            max-width: unset;
+
+            &::after {
+                right: -1rem;
+            }
+        }
+        &__img {
+            max-width: 90vw;
+            margin: 0 auto;
+            display: block;
         }
     }
 
 }
 
 @media screen and (max-width: $sm) {
+    .series {
 
+        &__content {
+            margin-bottom: unset;
+        }
+        &__title {
+            font-size: 3.4rem;
+
+            &::after {
+                left: 9rem;
+            }
+        }
+
+        &__img-wrap {
+            max-width: unset;
+
+            &::after {
+                right: -3rem;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: $xs) {

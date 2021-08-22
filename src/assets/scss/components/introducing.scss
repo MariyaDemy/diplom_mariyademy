@@ -99,11 +99,54 @@
                 right: 19rem;
             }
         }
+
+        &__img-wrap {
+            max-width: unset;
+        }
+
+        &__img {
+            max-width: 84vw;
+            display: block;
+            margin: 0 auto;
+           
+        }
     }
 }
 
 @media screen and (max-width: $sm) {
 
+    .introducing {
+
+        &__content {
+            margin: 6rem auto 0;
+        }
+        &__title {
+            font-size: 3.4rem;
+
+            &::after {
+                top: 11.5rem;
+            }
+        }
+
+        &__text {
+            margin: 9rem auto 5.4rem;
+        }
+
+        &__img-wrap {
+            margin: 0 auto 3.66rem;
+        }
+
+        &__row {
+            margin: 0px 0 2rem;
+        }
+                
+    }
+
+    .item {
+        width: 50%;
+        margin: 0 auto 4rem;
+        padding: 0 6rem;
+    }
 }
 
 @media screen and (max-width: $xs) {

@@ -94,7 +94,28 @@
 }
 
 @media screen and (max-width: $sm) {
+    .what-can-do {
 
+        &__content {
+            margin: 5.8rem auto 0;
+        }
+        &__title {
+            font-size: 3.4rem;
+        }
+
+        &__text {
+            margin: 0 auto 5.4rem;
+        }
+
+        &__link {
+            margin: 0 auto 4rem;
+        }
+    }
+
+    .feature {
+        width: 50%;
+        margin: 0 auto 4rem;
+    }
 }
 
 @media screen and (max-width: $xs) {

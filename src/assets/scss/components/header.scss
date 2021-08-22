@@ -69,13 +69,19 @@
 }
 
 @media screen and (max-width: $md) {
-
+    .logo {
+        margin-right: 1rem;
+    }
 }
 
 @media screen and (max-width: $sm) {
     .header {
         &__row {
             justify-content: space-evenly;
+        }
+
+        &__registration {
+            margin-top: 1rem;
         }
     }
 }

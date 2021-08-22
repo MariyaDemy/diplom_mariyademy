@@ -88,8 +88,30 @@
     }
 }
 
-@media screen and (max-width: $xs) {
+@media screen and (max-width: $sm) {
 
+        .feedback {
+
+            &__content {
+                margin: 0 0 7.8rem;
+                padding: 3.7rem 0 0;
+            }
+            &__title {
+                font-size: 3.4rem;
+                margin: 0 auto 6.9rem;
+
+                &::before {
+                    right: 32rem;
+                }
+            }
+
+            &__text {
+                font-size: 2.6rem;
+                margin: 0 auto 5.5rem;
+                max-width: unset;
+                padding: 0 5rem
+            }
+        }
 }
 
 @media screen and (max-width: $xs) {

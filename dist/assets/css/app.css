@@ -278,9 +278,15 @@ button {
     padding: 1.2rem 1.6rem;
     margin-left: 4rem; }
 
+@media screen and (max-width: 1023px) {
+  .logo {
+    margin-right: 1rem; } }
+
 @media screen and (max-width: 767px) {
   .header__row {
-    justify-content: space-evenly; } }
+    justify-content: space-evenly; }
+  .header__registration {
+    margin-top: 1rem; } }
 
 .first-section {
   background-image: url("../imgs/rings.png");
@@ -364,6 +370,20 @@ button {
   .message-block {
     bottom: 13rem; } }
 
+@media screen and (max-width: 767px) {
+  .first-section__content {
+    margin-top: 16.8rem;
+    max-height: 53.3rem; }
+  .first-section__title {
+    font-size: 3.4rem; }
+  .first-section__text {
+    font-size: 1.8rem;
+    max-width: unset;
+    padding: 0 10rem;
+    margin-bottom: 3.3rem; }
+  .first-section__link {
+    margin-bottom: 5.8rem; } }
+
 .see-what {
   background: linear-gradient(180deg, #FFF7E0 0%, #FFFFFF 100%); }
   .see-what__content {
@@ -438,12 +458,25 @@ button {
   .see-what__content {
     margin: 15.3rem auto 0; }
   .see-what__example-wrap {
-    margin-bottom: 4rem; } }
+    margin-bottom: 4rem; }
+  .example__img {
+    max-width: 42vw; } }
 
 @media screen and (max-width: 767px) {
+  .see-what__content {
+    margin: 5.3rem auto 0; }
+  .see-what__title {
+    font-size: 3.4rem; }
+  .see-what__text {
+    margin-bottom: 5rem; }
   .example {
     max-width: 100%;
-    flex: 1 0 100%; } }
+    flex: 1 0 100%;
+    padding-bottom: 5rem; }
+    .example__title {
+      padding: 0px 10rem; }
+    .example__text {
+      padding: 0px 11rem; } }
 
 .series {
   position: relative;
@@ -555,7 +588,27 @@ button {
 
 @media screen and (max-width: 1023px) {
   .series__content {
-    margin-bottom: 9.2rem; } }
+    margin-bottom: 3.2rem; }
+  .series__img-wrap {
+    max-width: unset; }
+    .series__img-wrap::after {
+      right: -1rem; }
+  .series__img {
+    max-width: 90vw;
+    margin: 0 auto;
+    display: block; } }
+
+@media screen and (max-width: 767px) {
+  .series__content {
+    margin-bottom: unset; }
+  .series__title {
+    font-size: 3.4rem; }
+    .series__title::after {
+      left: 9rem; }
+  .series__img-wrap {
+    max-width: unset; }
+    .series__img-wrap::after {
+      right: -3rem; } }
 
 .what-can-do {
   background: linear-gradient(180deg, #FDE6E6 0%, #FFFFFF 100%); }
@@ -618,6 +671,19 @@ button {
   .what-can-do__link {
     margin: 0 auto 12.7rem; } }
 
+@media screen and (max-width: 767px) {
+  .what-can-do__content {
+    margin: 5.8rem auto 0; }
+  .what-can-do__title {
+    font-size: 3.4rem; }
+  .what-can-do__text {
+    margin: 0 auto 5.4rem; }
+  .what-can-do__link {
+    margin: 0 auto 4rem; }
+  .feature {
+    width: 50%;
+    margin: 0 auto 4rem; } }
+
 .feedback {
   position: relative;
   overflow: hidden; }
@@ -673,6 +739,21 @@ button {
 @media screen and (max-width: 1023px) {
   .feedback__content {
     margin: 0 0 13.8rem; } }
+
+@media screen and (max-width: 767px) {
+  .feedback__content {
+    margin: 0 0 7.8rem;
+    padding: 3.7rem 0 0; }
+  .feedback__title {
+    font-size: 3.4rem;
+    margin: 0 auto 6.9rem; }
+    .feedback__title::before {
+      right: 32rem; }
+  .feedback__text {
+    font-size: 2.6rem;
+    margin: 0 auto 5.5rem;
+    max-width: unset;
+    padding: 0 5rem; } }
 
 .introducing {
   background: linear-gradient(180deg, #E4DDFF 0%, rgba(255, 255, 255, 0) 100%);
@@ -732,7 +813,31 @@ button {
   .introducing__row {
     margin: 0 0 12rem; }
   .introducing__title::after {
-    right: 19rem; } }
+    right: 19rem; }
+  .introducing__img-wrap {
+    max-width: unset; }
+  .introducing__img {
+    max-width: 84vw;
+    display: block;
+    margin: 0 auto; } }
+
+@media screen and (max-width: 767px) {
+  .introducing__content {
+    margin: 6rem auto 0; }
+  .introducing__title {
+    font-size: 3.4rem; }
+    .introducing__title::after {
+      top: 11.5rem; }
+  .introducing__text {
+    margin: 9rem auto 5.4rem; }
+  .introducing__img-wrap {
+    margin: 0 auto 3.66rem; }
+  .introducing__row {
+    margin: 0px 0 2rem; }
+  .item {
+    width: 50%;
+    margin: 0 auto 4rem;
+    padding: 0 6rem; } }
 
 .become {
   background-image: url("../imgs/rings2.png");
@@ -775,6 +880,12 @@ button {
       color: #e92e27;
       outline: none;
       text-decoration: none; }
+
+@media screen and (max-width: 767px) {
+  .become__title {
+    font-size: 3.4rem; }
+    .become__title::after {
+      left: 10rem; } }
 
 .footer {
   margin: 15.4rem 0 10rem; }
