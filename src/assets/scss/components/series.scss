@@ -127,6 +127,14 @@
         display: block;
         max-width: 15rem;
         margin: 0 auto;
+
+        &:hover,
+        &:active,
+        &:focus {
+            color: $c-primary;
+            outline: none;
+            text-decoration: none;
+    }
     }
 
 
@@ -153,6 +161,24 @@
     }
 }
 
-       
+
+@media screen and (max-width: $md) {
+
+    .series {
+
+        &__content {
+            margin-bottom: 9.2rem;
+        }
+    }
+
+}
+
+@media screen and (max-width: $sm) {
+
+}
+
+@media screen and (max-width: $xs) {
+
+}
 
         

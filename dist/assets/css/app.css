@@ -278,9 +278,13 @@ button {
     padding: 1.2rem 1.6rem;
     margin-left: 4rem; }
 
+@media screen and (max-width: 767px) {
+  .header__row {
+    justify-content: space-evenly; } }
+
 .first-section {
   background-image: url("../imgs/rings.png");
-  background-size: cover;
+  background-size: 100vw;
   background-repeat: no-repeat;
   position: relative;
   z-index: 0;
@@ -304,7 +308,7 @@ button {
     letter-spacing: 1px;
     color: #222222;
     display: inline-block;
-    max-width: 106rem;
+    padding: 0 2rem;
     margin-bottom: 1.4rem; }
   .first-section__text {
     font-size: 2.2rem;
@@ -331,6 +335,8 @@ button {
     position: relative;
     bottom: 0;
     z-index: 2; }
+  .first-section__img {
+    max-width: 60vw; }
 
 .link-logo {
   margin-right: 0.8rem; }
@@ -341,12 +347,22 @@ button {
   background-color: #267BEE;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.06);
   position: fixed;
-  bottom: 30rem;
+  bottom: 17rem;
   right: 2rem;
   z-index: 3;
   display: flex;
   align-items: center;
   justify-content: center; }
+
+@media screen and (max-width: 1023px) {
+  .first-section {
+    max-height: 92.6rem; }
+    .first-section__content {
+      margin-top: 18.8rem; }
+    .first-section__title {
+      font-size: 4.4rem; }
+  .message-block {
+    bottom: 13rem; } }
 
 .see-what {
   background: linear-gradient(180deg, #FFF7E0 0%, #FFFFFF 100%); }
@@ -372,17 +388,15 @@ button {
     margin-bottom: 8.6rem; }
   .see-what__example-wrap {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-height: 333.2rem;
-    margin-bottom: 11rem; }
+    margin-bottom: 14rem; }
 
 .example {
-  max-width: 41.2rem;
-  margin-right: 6.7rem;
-  margin-left: 5rem;
-  padding-bottom: 10.4rem; }
+  max-width: 50%;
+  padding-bottom: 10.4rem;
+  flex: 1 0 50%;
+  text-align: center; }
   .example__img {
     margin-bottom: 1.3rem; }
   .example__title {
@@ -398,7 +412,7 @@ button {
   .example__text {
     margin-bottom: 2rem;
     text-align: center;
-    max-width: 39.3rem; }
+    padding: 0 6rem; }
   .example__author, .example__text, .example__start, .example__date, .example__btn {
     font-size: 1.6rem;
     line-height: 140%;
@@ -415,6 +429,21 @@ button {
     background: #FFEDC2;
     border-radius: 0.8rem;
     padding: 1.6rem 3.4rem; }
+    .example__btn:hover, .example__btn:active, .example__btn:focus {
+      color: #e92e27;
+      outline: none;
+      text-decoration: none; }
+
+@media screen and (max-width: 1023px) {
+  .see-what__content {
+    margin: 15.3rem auto 0; }
+  .see-what__example-wrap {
+    margin-bottom: 4rem; } }
+
+@media screen and (max-width: 767px) {
+  .example {
+    max-width: 100%;
+    flex: 1 0 100%; } }
 
 .series__content {
   margin-bottom: 15.2rem; }
@@ -499,6 +528,10 @@ button {
     display: block;
     max-width: 15rem;
     margin: 0 auto; }
+    .qa-block__btn:hover, .qa-block__btn:active, .qa-block__btn:focus {
+      color: #e92e27;
+      outline: none;
+      text-decoration: none; }
 
 .details {
   column-count: 2;
@@ -514,6 +547,10 @@ button {
     text-align: center;
     color: #000;
     margin: 0 0 5.7rem; }
+
+@media screen and (max-width: 1023px) {
+  .series__content {
+    margin-bottom: 9.2rem; } }
 
 .what-can-do {
   background: linear-gradient(180deg, #FDE6E6 0%, #FFFFFF 100%);
@@ -552,7 +589,7 @@ button {
     color: #222222;
     background: #FFF2CD;
     border-radius: 0.8rem;
-    padding: 1.6rem 4.8rem 1.5rem 2.4rem;
+    padding: 1.6rem 3.2rem 1.6rem 3.2rem;
     display: block;
     max-width: 20.8rem;
     margin: 0 auto 28.7rem; }
@@ -576,6 +613,10 @@ button {
     color: #555555;
     max-width: 26.6rem;
     margin: 0 auto; }
+
+@media screen and (max-width: 1023px) {
+  .what-can-do__link {
+    margin: 0 auto 12.7rem; } }
 
 .feedback__wrapper {
   background: linear-gradient(180deg, #FFFAEC 0%, rgba(255, 255, 255, 0) 100%);
@@ -628,9 +669,14 @@ button {
   text-align: center;
   color: #222222; }
 
+@media screen and (max-width: 1023px) {
+  .feedback__content {
+    margin: 0 0 13.8rem; } }
+
 .introducing {
   background: linear-gradient(180deg, #E4DDFF 0%, rgba(255, 255, 255, 0) 100%);
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .introducing::before {
     content: url("../imgs/wave3.png");
     position: absolute;
@@ -686,9 +732,13 @@ button {
     max-width: 26.7rem;
     margin: 0 auto; }
 
+@media screen and (max-width: 1023px) {
+  .introducing__row {
+    margin: 0 0 12rem; } }
+
 .become {
   background-image: url("../imgs/rings2.png");
-  background-size: cover;
+  background-size: 100vw;
   min-height: 52.7rem;
   background-repeat: no-repeat;
   object-fit: cover; }
@@ -723,6 +773,10 @@ button {
     padding: 1.5rem 3.2rem;
     background-color: #FFD338;
     border-radius: 0.8rem; }
+    .become__btn:hover, .become__btn:active, .become__btn:focus {
+      color: #e92e27;
+      outline: none;
+      text-decoration: none; }
 
 .footer {
   margin: 15.4rem 0 10rem; }
@@ -730,7 +784,8 @@ button {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    padding: 0 1rem; }
   .footer__text {
     font-size: 1.6rem;
     line-height: 140%;
@@ -748,3 +803,9 @@ button {
   margin-right: 15rem; }
   .socials__icon {
     margin-right: 2.8rem; }
+
+@media screen and (max-width: 1023px) {
+  .footer {
+    margin: 2.4rem 0 6rem; }
+    .footer__row {
+      padding: 0 2.4rem; } }

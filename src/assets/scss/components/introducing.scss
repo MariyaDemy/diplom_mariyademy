@@ -5,6 +5,7 @@
 .introducing {
     background: linear-gradient(180deg, #E4DDFF 0%, rgba(255, 255, 255, 0) 100%);
     position: relative;
+    overflow: hidden;
 
     &::before {
         content: url("../imgs/wave3.png");
@@ -90,3 +91,21 @@
     }
 }
 
+@media screen and (max-width: $md) {
+
+    .introducing {
+        &__row {
+            
+            margin: 0 0 12rem;
+            
+        }
+    }
+}
+
+@media screen and (max-width: $sm) {
+
+}
+
+@media screen and (max-width: $xs) {
+
+}

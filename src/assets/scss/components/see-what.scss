@@ -4,7 +4,7 @@
 .see-what {
 
     background: linear-gradient(180deg, #FFF7E0 0%, #FFFFFF 100%);
-    
+       
     
     &__content {
         display: flex;
@@ -41,22 +41,19 @@
 
     &__example-wrap {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
-
-        max-height: 333.2rem;
-        margin-bottom: 11rem;
+        margin-bottom: 14rem;
     }
     
 }
 
 .example {
 
-    max-width: 41.2rem;
-    margin-right: 6.7rem;
-    margin-left: 5rem;
+    max-width: 50%;
     padding-bottom: 10.4rem;
+    flex: 1 0 50%;
+    text-align: center;
 
     &__img {
         margin-bottom: 1.3rem;
@@ -83,7 +80,7 @@
     &__text {
         margin-bottom: 2rem;
         text-align: center;
-        max-width: 39.3rem;
+        padding: 0 6rem;
     }
 
     &__author,
@@ -118,8 +115,42 @@
         border-radius: 0.8rem;
         padding: 1.6rem 3.4rem;
 
+        &:hover,
+        &:active,
+        &:focus {
+            color: $c-primary;
+            outline: none;
+            text-decoration: none;
     }
 
+    }
 }
+
+@media screen and (max-width: $md) {
+    .see-what {
+        &__content {
+            margin: 15.3rem auto 0;
+        }
+
+        &__example-wrap {
+            margin-bottom: 4rem;
+        }
+    }
+}
+
+@media screen and (max-width: $sm) {
+
+    .example {
+        max-width: 100%;
+        flex: 1 0 100%;
+    }
+}
+
+@media screen and (max-width: $xs) {
+
+}
+
+
+
 
 

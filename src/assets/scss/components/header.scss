@@ -67,3 +67,20 @@
         margin-left: 4rem;
     }
 }
+
+@media screen and (max-width: $md) {
+
+}
+
+@media screen and (max-width: $sm) {
+    .header {
+        &__row {
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@media screen and (max-width: $xs) {
+
+}
+

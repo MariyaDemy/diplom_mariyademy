@@ -10,6 +10,7 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
+        padding: 0 1rem;
     }
 
 
@@ -39,4 +40,23 @@
     &__icon {
         margin-right: 2.8rem;
     }
+}
+
+@media screen and (max-width: $md) {
+    .footer {
+
+        margin: 2.4rem 0 6rem;
+
+        &__row {
+            padding: 0 2.4rem;
+        }
+    }
+}
+
+@media screen and (max-width: $sm) {
+
+}
+
+@media screen and (max-width: $xs) {
+
 }

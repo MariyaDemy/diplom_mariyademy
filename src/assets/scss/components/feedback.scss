@@ -68,3 +68,22 @@
         color: $c-text;
     }
 }
+
+
+@media screen and (max-width: $md) {
+
+    .feedback {
+        &__content {
+            margin: 0 0 13.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: $xs) {
+
+}
+
+@media screen and (max-width: $xs) {
+
+}
+
