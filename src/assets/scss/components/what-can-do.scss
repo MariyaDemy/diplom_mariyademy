@@ -4,14 +4,7 @@
 .what-can-do {
 
     background: linear-gradient(180deg, #FDE6E6 0%, #FFFFFF 100%);
-    position: relative;
-    // overflow: hidden;
-
-    &::before {
-        content: url("../imgs/wave2.png");
-        position: absolute;
-        top: -5rem;
-    }
+      
 
     &__content {
         max-width: 90.7rem;

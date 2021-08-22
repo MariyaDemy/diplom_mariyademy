@@ -3,6 +3,15 @@
 
 .feedback {
 
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: url("../imgs/wave3.png");
+        position: absolute;
+        bottom: -1rem;
+    }
+
     &__wrapper {
         background: linear-gradient(180deg, #FFFAEC 0%, rgba(255, 255, 255, 0) 100%);
         max-width: 136rem;

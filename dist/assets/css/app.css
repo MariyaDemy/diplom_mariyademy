@@ -445,34 +445,39 @@ button {
     max-width: 100%;
     flex: 1 0 100%; } }
 
-.series__content {
-  margin-bottom: 15.2rem; }
-
-.series__title {
-  font-weight: 700;
-  font-size: 4.8rem;
-  line-height: 110%;
-  text-align: center;
-  letter-spacing: 1px;
-  color: #222222;
-  margin: 0 auto;
-  margin-bottom: 7.4rem;
-  position: relative; }
-  .series__title::after {
-    content: url("../imgs/line1.svg");
-    position: absolute;
-    bottom: -4.5rem;
-    left: 21rem; }
-
-.series__img-wrap {
+.series {
   position: relative;
-  max-width: 83.4rem;
-  margin: 0 auto; }
-  .series__img-wrap::after {
-    content: url("../imgs/line2.svg");
+  overflow: hidden; }
+  .series::after {
+    content: url("../imgs/wave2.png");
     position: absolute;
-    top: -7.4rem;
-    right: -7rem; }
+    bottom: -1rem; }
+  .series__content {
+    margin-bottom: 15.2rem; }
+  .series__title {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #222222;
+    margin: 0 auto;
+    margin-bottom: 7.4rem;
+    position: relative; }
+    .series__title::after {
+      content: url("../imgs/line1.svg");
+      position: absolute;
+      bottom: -4.5rem;
+      left: 21rem; }
+  .series__img-wrap {
+    position: relative;
+    max-width: 83.4rem;
+    margin: 0 auto; }
+    .series__img-wrap::after {
+      content: url("../imgs/line2.svg");
+      position: absolute;
+      top: -7.4rem;
+      right: -7rem; }
 
 .qa-block {
   background-color: #fff;
@@ -553,12 +558,7 @@ button {
     margin-bottom: 9.2rem; } }
 
 .what-can-do {
-  background: linear-gradient(180deg, #FDE6E6 0%, #FFFFFF 100%);
-  position: relative; }
-  .what-can-do::before {
-    content: url("../imgs/wave2.png");
-    position: absolute;
-    top: -5rem; }
+  background: linear-gradient(180deg, #FDE6E6 0%, #FFFFFF 100%); }
   .what-can-do__content {
     max-width: 90.7rem;
     margin: 10.8rem auto 0; }
@@ -618,56 +618,57 @@ button {
   .what-can-do__link {
     margin: 0 auto 12.7rem; } }
 
-.feedback__wrapper {
-  background: linear-gradient(180deg, #FFFAEC 0%, rgba(255, 255, 255, 0) 100%);
-  max-width: 136rem;
-  margin: 0 auto; }
-
-.feedback__content {
-  max-width: 102.6rem;
-  padding: 8.7rem 0 0;
-  margin: 0 0 27.8rem; }
-
-.feedback__title {
-  font-size: 4.8rem;
-  line-height: 110%;
-  text-align: center;
-  letter-spacing: 1px;
-  color: #222222;
+.feedback {
   position: relative;
-  z-index: 0;
-  margin: 0 auto 10.9rem; }
-  .feedback__title::before {
-    content: url("../imgs/quotes.svg");
+  overflow: hidden; }
+  .feedback::after {
+    content: url("../imgs/wave3.png");
     position: absolute;
-    right: 44rem;
-    top: -3rem;
-    z-index: -1; }
-
-.feedback__text {
-  font-size: 3.2rem;
-  line-height: 125%;
-  text-align: center;
-  color: #222222;
-  max-width: 72.5rem;
-  margin: 0 auto 8.5rem; }
-
-.feedback__img {
-  display: block;
-  max-width: 6.4rem;
-  margin: 0 auto 2rem; }
-
-.feedback__author {
-  font-size: 1.6rem;
-  line-height: 140%;
-  text-align: center;
-  color: #222222; }
-
-.feedback__author-position {
-  font-size: 1.2rem;
-  line-height: 140%;
-  text-align: center;
-  color: #222222; }
+    bottom: -1rem; }
+  .feedback__wrapper {
+    background: linear-gradient(180deg, #FFFAEC 0%, rgba(255, 255, 255, 0) 100%);
+    max-width: 136rem;
+    margin: 0 auto; }
+  .feedback__content {
+    max-width: 102.6rem;
+    padding: 8.7rem 0 0;
+    margin: 0 0 27.8rem; }
+  .feedback__title {
+    font-size: 4.8rem;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #222222;
+    position: relative;
+    z-index: 0;
+    margin: 0 auto 10.9rem; }
+    .feedback__title::before {
+      content: url("../imgs/quotes.svg");
+      position: absolute;
+      right: 44rem;
+      top: -3rem;
+      z-index: -1; }
+  .feedback__text {
+    font-size: 3.2rem;
+    line-height: 125%;
+    text-align: center;
+    color: #222222;
+    max-width: 72.5rem;
+    margin: 0 auto 8.5rem; }
+  .feedback__img {
+    display: block;
+    max-width: 6.4rem;
+    margin: 0 auto 2rem; }
+  .feedback__author {
+    font-size: 1.6rem;
+    line-height: 140%;
+    text-align: center;
+    color: #222222; }
+  .feedback__author-position {
+    font-size: 1.2rem;
+    line-height: 140%;
+    text-align: center;
+    color: #222222; }
 
 @media screen and (max-width: 1023px) {
   .feedback__content {
@@ -675,12 +676,7 @@ button {
 
 .introducing {
   background: linear-gradient(180deg, #E4DDFF 0%, rgba(255, 255, 255, 0) 100%);
-  position: relative;
-  overflow: hidden; }
-  .introducing::before {
-    content: url("../imgs/wave3.png");
-    position: absolute;
-    top: -5rem; }
+  position: relative; }
   .introducing__content {
     max-width: 85rem;
     margin: 11rem auto 0; }
@@ -734,7 +730,9 @@ button {
 
 @media screen and (max-width: 1023px) {
   .introducing__row {
-    margin: 0 0 12rem; } }
+    margin: 0 0 12rem; }
+  .introducing__title::after {
+    right: 19rem; } }
 
 .become {
   background-image: url("../imgs/rings2.png");

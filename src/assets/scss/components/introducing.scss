@@ -5,14 +5,7 @@
 .introducing {
     background: linear-gradient(180deg, #E4DDFF 0%, rgba(255, 255, 255, 0) 100%);
     position: relative;
-    overflow: hidden;
-
-    &::before {
-        content: url("../imgs/wave3.png");
-        position: absolute;
-        top: -5rem;
-    }
-
+    
     &__content {
 
         max-width: 85rem;
@@ -98,6 +91,13 @@
             
             margin: 0 0 12rem;
             
+        }
+
+        &__title {
+
+            &::after {
+                right: 19rem;
+            }
         }
     }
 }

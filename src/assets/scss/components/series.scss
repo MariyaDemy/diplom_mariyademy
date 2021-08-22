@@ -3,6 +3,15 @@
 
 .series {
 
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: url("../imgs/wave2.png");
+        position: absolute;
+        bottom: -1rem;
+    }
+
     &__content {
         margin-bottom: 15.2rem;
     }
