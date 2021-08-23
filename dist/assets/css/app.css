@@ -384,6 +384,15 @@ button {
   .first-section__link {
     margin-bottom: 5.8rem; } }
 
+@media screen and (max-width: 575px) {
+  .first-section__title {
+    font-size: 2.4rem;
+    padding: 0 2rem 0; }
+  .first-section__text {
+    font-size: 1.6rem;
+    padding: 0px 2rem;
+    margin-bottom: 2rem; } }
+
 .see-what {
   background: linear-gradient(180deg, #FFF7E0 0%, #FFFFFF 100%); }
   .see-what__content {
@@ -477,6 +486,11 @@ button {
       padding: 0px 10rem; }
     .example__text {
       padding: 0px 11rem; } }
+
+@media screen and (max-width: 575px) {
+  .see-what__title {
+    font-size: 2.4rem;
+    padding: 0 2rem 0; } }
 
 .series {
   position: relative;
@@ -610,6 +624,11 @@ button {
     .series__img-wrap::after {
       right: -3rem; } }
 
+@media screen and (max-width: 575px) {
+  .series__title {
+    font-size: 2.4rem;
+    padding: 0 2rem 0; } }
+
 .what-can-do {
   background: linear-gradient(180deg, #FDE6E6 0%, #FFFFFF 100%); }
   .what-can-do__content {
@@ -684,6 +703,18 @@ button {
     width: 50%;
     margin: 0 auto 4rem; } }
 
+@media screen and (max-width: 575px) {
+  .what-can-do__title {
+    font-size: 2.4rem;
+    padding: 0 2rem 0; }
+  .feature {
+    width: 100%;
+    text-align: center; }
+    .feature__title {
+      font-size: 2.2rem; }
+    .feature__description {
+      margin: 0 auto; } }
+
 .feedback {
   position: relative;
   overflow: hidden; }
@@ -754,6 +785,11 @@ button {
     margin: 0 auto 5.5rem;
     max-width: unset;
     padding: 0 5rem; } }
+
+@media screen and (max-width: 575px) {
+  .feedback__title {
+    font-size: 2.4rem;
+    padding: 0 2rem 0; } }
 
 .introducing {
   background: linear-gradient(180deg, #E4DDFF 0%, rgba(255, 255, 255, 0) 100%);
@@ -831,13 +867,34 @@ button {
   .introducing__text {
     margin: 9rem auto 5.4rem; }
   .introducing__img-wrap {
-    margin: 0 auto 3.66rem; }
+    max-width: unset; }
+  .introducing__img {
+    max-width: 84vw;
+    display: block;
+    margin: 0 auto; }
   .introducing__row {
     margin: 0px 0 2rem; }
   .item {
     width: 50%;
     margin: 0 auto 4rem;
     padding: 0 6rem; } }
+
+@media screen and (max-width: 575px) {
+  .introducing__title {
+    font-size: 2.4rem; }
+    .introducing__title::after {
+      right: 4rem; }
+  .introducing__img {
+    max-width: 84vw;
+    display: block;
+    margin: 0 auto; }
+  .item {
+    width: 100%;
+    text-align: center; }
+    .item__title {
+      font-size: 2.2rem; }
+    .item__description {
+      margin: 0 auto; } }
 
 .become {
   background-image: url("../imgs/rings2.png");
@@ -887,6 +944,22 @@ button {
     .become__title::after {
       left: 10rem; } }
 
+@media screen and (max-width: 575px) {
+  .become {
+    min-height: 40.7rem;
+    background-image: none; }
+    .become__img {
+      max-width: 15.6rem;
+      max-height: 15.6rem; }
+    .become__title {
+      font-size: 2.4rem;
+      margin-bottom: 5.6rem; }
+      .become__title::after {
+        left: 0rem; }
+    .become__btn {
+      padding: 1.5rem 2.2rem;
+      font-size: 1.2rem; } }
+
 .footer {
   margin: 15.4rem 0 10rem; }
   .footer__row {
@@ -918,3 +991,16 @@ button {
     margin: 2.4rem 0 6rem; }
     .footer__row {
       padding: 0 2.4rem; } }
+
+@media screen and (max-width: 575px) {
+  .footer {
+    margin: 0px 0 3rem; }
+    .footer__row {
+      padding: 0 3.4rem;
+      justify-content: space-evenly; }
+    .footer__links {
+      padding: 0 0 1rem; }
+  .socials {
+    margin: unset; }
+    .socials__icon {
+      margin: unset; } }

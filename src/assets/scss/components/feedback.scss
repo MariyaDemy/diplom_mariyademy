@@ -116,5 +116,13 @@
 
 @media screen and (max-width: $xs) {
 
+    .feedback {
+
+        &__title {
+            font-size: 2.4rem;
+            padding: 0 2rem 0;
+        }
+    }
+
 }
 

@@ -81,4 +81,30 @@
 
 @media screen and (max-width: $xs) {
 
+    .become {
+
+        min-height: 40.7rem;
+        background-image: none;
+
+        &__img {
+            max-width: 15.6rem;
+            max-height: 15.6rem;
+        }
+
+        &__title {
+
+            font-size: 2.4rem;
+            margin-bottom: 5.6rem;
+
+            &::after {
+                left: 0rem;
+            }
+        }
+
+        &__btn {
+            padding: 1.5rem 2.2rem;
+            font-size: 1.2rem;
+        }
+    }
+
 }

@@ -221,6 +221,13 @@
 
 @media screen and (max-width: $xs) {
 
+    .series {
+        &__title {
+            font-size: 2.4rem;
+            padding: 0 2rem 0;
+        }
+    }
+
 }
 
         

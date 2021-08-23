@@ -133,7 +133,14 @@
         }
 
         &__img-wrap {
-            margin: 0 auto 3.66rem;
+            max-width: unset;
+        }
+
+        &__img {
+            max-width: 84vw;
+            display: block;
+            margin: 0 auto;
+           
         }
 
         &__row {
@@ -151,4 +158,39 @@
 
 @media screen and (max-width: $xs) {
 
+    .introducing {
+
+        &__title {
+            font-size: 2.4rem;
+
+            &::after {
+                right: 4rem;
+            }
+        }
+
+
+        &__img {
+            max-width: 84vw;
+            display: block;
+            margin: 0 auto;
+
+        }
+
+
+    }
+
+    .item {
+        width: 100%;
+        text-align: center;
+
+        &__title {
+            font-size: 2.2rem;
+        }
+
+        &__description {
+            margin: 0 auto;
+        }
+    }
+
+    
 }

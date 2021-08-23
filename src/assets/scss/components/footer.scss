@@ -59,4 +59,24 @@
 
 @media screen and (max-width: $xs) {
 
+    .footer {
+        margin: 0px 0 3rem;
+
+        &__row {
+            padding: 0 3.4rem;
+            justify-content: space-evenly;
+        }
+
+        &__links {
+            padding: 0 0 1rem;
+        }
+    }
+
+    .socials {
+        margin: unset;
+
+        &__icon {
+            margin: unset;
+        }
+    }
 }

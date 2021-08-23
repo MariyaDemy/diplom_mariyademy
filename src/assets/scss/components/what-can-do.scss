@@ -120,5 +120,25 @@
 
 @media screen and (max-width: $xs) {
 
+    .what-can-do {
+        
+        &__title {
+            font-size: 2.4rem;
+            padding: 0 2rem 0;
+        }
+        
+    }
+    .feature {
+        width: 100%;
+        text-align: center;
+
+        &__title {
+            font-size: 2.2rem;
+        }
+
+        &__description {
+            margin: 0 auto;
+        }
+    }
 }
 
