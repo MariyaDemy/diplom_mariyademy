@@ -160,35 +160,45 @@
 
     .introducing {
 
+        &__content {
+            margin: 2rem auto 0;
+        }
+
         &__title {
             font-size: 2.4rem;
 
             &::after {
-                right: 4rem;
+                content: none;
             }
         }
 
-
-        &__img {
-            max-width: 84vw;
-            display: block;
-            margin: 0 auto;
-
+        &__text {
+            font-size: 1.6rem;    
+            max-width: unset; 
+            padding: 0px 2rem 0;
+            margin: 3rem auto 2rem;
         }
 
+        &__img-wrap {
+            display: none;
+        }
 
     }
 
     .item {
         width: 100%;
         text-align: center;
+        margin: 0 auto 2rem;
+        padding: 0 3rem;
 
         &__title {
-            font-size: 2.2rem;
+            font-size: 2rem;
         }
 
         &__description {
             margin: 0 auto;
+            max-width: unset;
+            padding: 0 1rem 0;
         }
     }
 

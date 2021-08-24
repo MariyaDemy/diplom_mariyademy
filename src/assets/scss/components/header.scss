@@ -88,5 +88,14 @@
 
 @media screen and (max-width: $xs) {
 
+    .header {
+        &__links {
+            margin-right: 2rem;
+        }
+        
+    }
+    .link-header {
+        font-size: 1.2rem;
+    }
 }
 

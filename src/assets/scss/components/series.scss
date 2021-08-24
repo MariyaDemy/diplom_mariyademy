@@ -225,6 +225,49 @@
         &__title {
             font-size: 2.4rem;
             padding: 0 2rem 0;
+            margin-bottom: 2rem;
+
+            &::after {
+                display: none;
+            }
+        }
+
+        &__img-wrap {
+
+            &::after {
+                display: none;
+            }
+            
+        }
+    }
+
+    .qa-block {
+
+        &__title {
+            margin: 0 0 2rem;
+            padding: 0px 1rem 0;
+        }
+
+        &__text {
+            margin: 0 0 2rem;
+            padding: 0 2rem 0;
+        }
+
+        &__img1 {
+            margin: 2rem auto 2rem;
+            max-width: 7.6rem;
+        }
+
+        &__btn {
+            font-size: 1.2rem;
+        }
+    }
+
+    .details {
+        padding: 0rem 2rem;
+
+        &__text {
+            margin: 0 0 2rem;
         }
     }
 

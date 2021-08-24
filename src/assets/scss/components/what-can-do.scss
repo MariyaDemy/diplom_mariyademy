@@ -91,6 +91,14 @@
         }
     }
 
+    .feature {
+        padding: 0 2rem;
+
+        &__img {
+            max-width: 28vw;
+        }
+    }
+
 }
 
 @media screen and (max-width: $sm) {
@@ -121,19 +129,41 @@
 @media screen and (max-width: $xs) {
 
     .what-can-do {
+
+        &__content {
+            margin: 2rem auto 0;
+        }
         
         &__title {
             font-size: 2.4rem;
             padding: 0 2rem 0;
+            margin: 0 0 1.8rem;
+        }
+        
+        &__text {
+            font-size: 1.6rem;
+            max-width: unset;
+            padding: 0 2rem 0;
+            margin: 0px auto 2rem;
+        }
+
+        &__link {
+            font-size: 1.2rem;
+            padding: 1.5rem 2.2rem 1.5rem 2.2rem;
+            max-width: 14.8rem;
+            margin: 0 auto 2rem;
         }
         
     }
     .feature {
         width: 100%;
         text-align: center;
+        margin: 0 auto 2rem;
+        padding: 0 2rem;
 
         &__title {
-            font-size: 2.2rem;
+            font-size: 2rem;
+            margin: 2rem 0 1rem;
         }
 
         &__description {

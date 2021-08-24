@@ -288,6 +288,12 @@ button {
   .header__registration {
     margin-top: 1rem; } }
 
+@media screen and (max-width: 575px) {
+  .header__links {
+    margin-right: 2rem; }
+  .link-header {
+    font-size: 1.2rem; } }
+
 .first-section {
   background-image: url("../imgs/rings.png");
   background-size: 100vw;
@@ -385,13 +391,23 @@ button {
     margin-bottom: 5.8rem; } }
 
 @media screen and (max-width: 575px) {
+  .first-section__content {
+    margin-top: 12.8rem; }
+  .first-section::after {
+    display: none; }
+  .first-section__link {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    padding: 1.5rem 2.2rem; }
   .first-section__title {
     font-size: 2.4rem;
     padding: 0 2rem 0; }
   .first-section__text {
     font-size: 1.6rem;
     padding: 0px 2rem;
-    margin-bottom: 2rem; } }
+    margin-bottom: 2rem; }
+  .first-section__img {
+    display: none; } }
 
 .see-what {
   background: linear-gradient(180deg, #FFF7E0 0%, #FFFFFF 100%); }
@@ -485,12 +501,36 @@ button {
     .example__title {
       padding: 0px 10rem; }
     .example__text {
-      padding: 0px 11rem; } }
+      padding: 0px 11rem; }
+    .example__img {
+      max-width: 49vw; } }
 
 @media screen and (max-width: 575px) {
+  .see-what__content {
+    margin: 2rem auto 0; }
   .see-what__title {
     font-size: 2.4rem;
-    padding: 0 2rem 0; } }
+    padding: 0 2rem 0; }
+  .see-what__text {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    padding: 0 2rem 0; }
+  .see-what__example-wrap {
+    margin-bottom: 0rem; }
+  .example {
+    padding-bottom: 2rem; }
+    .example__title {
+      font-size: 2rem;
+      padding: 0px 2rem; }
+    .example__text {
+      padding: 0px 3rem;
+      margin-bottom: 1rem; }
+    .example__img {
+      max-width: 83vw; }
+    .example__author, .example__text, .example__start, .example__date, .example__btn {
+      font-size: 1.4rem; }
+    .example__btn {
+      padding: 1.5rem 2.2rem; } }
 
 .series {
   position: relative;
@@ -627,7 +667,27 @@ button {
 @media screen and (max-width: 575px) {
   .series__title {
     font-size: 2.4rem;
-    padding: 0 2rem 0; } }
+    padding: 0 2rem 0;
+    margin-bottom: 2rem; }
+    .series__title::after {
+      display: none; }
+  .series__img-wrap::after {
+    display: none; }
+  .qa-block__title {
+    margin: 0 0 2rem;
+    padding: 0px 1rem 0; }
+  .qa-block__text {
+    margin: 0 0 2rem;
+    padding: 0 2rem 0; }
+  .qa-block__img1 {
+    margin: 2rem auto 2rem;
+    max-width: 7.6rem; }
+  .qa-block__btn {
+    font-size: 1.2rem; }
+  .details {
+    padding: 0rem 2rem; }
+    .details__text {
+      margin: 0 0 2rem; } }
 
 .what-can-do {
   background: linear-gradient(180deg, #FDE6E6 0%, #FFFFFF 100%); }
@@ -688,7 +748,11 @@ button {
 
 @media screen and (max-width: 1023px) {
   .what-can-do__link {
-    margin: 0 auto 12.7rem; } }
+    margin: 0 auto 12.7rem; }
+  .feature {
+    padding: 0 2rem; }
+    .feature__img {
+      max-width: 28vw; } }
 
 @media screen and (max-width: 767px) {
   .what-can-do__content {
@@ -704,14 +768,30 @@ button {
     margin: 0 auto 4rem; } }
 
 @media screen and (max-width: 575px) {
+  .what-can-do__content {
+    margin: 2rem auto 0; }
   .what-can-do__title {
     font-size: 2.4rem;
-    padding: 0 2rem 0; }
+    padding: 0 2rem 0;
+    margin: 0 0 1.8rem; }
+  .what-can-do__text {
+    font-size: 1.6rem;
+    max-width: unset;
+    padding: 0 2rem 0;
+    margin: 0px auto 2rem; }
+  .what-can-do__link {
+    font-size: 1.2rem;
+    padding: 1.5rem 2.2rem 1.5rem 2.2rem;
+    max-width: 14.8rem;
+    margin: 0 auto 2rem; }
   .feature {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    margin: 0 auto 2rem;
+    padding: 0 2rem; }
     .feature__title {
-      font-size: 2.2rem; }
+      font-size: 2rem;
+      margin: 2rem 0 1rem; }
     .feature__description {
       margin: 0 auto; } }
 
@@ -787,9 +867,21 @@ button {
     padding: 0 5rem; } }
 
 @media screen and (max-width: 575px) {
+  .feedback__content {
+    margin: 0 0 2.8rem;
+    padding: 1.7rem 0 0; }
   .feedback__title {
     font-size: 2.4rem;
-    padding: 0 2rem 0; } }
+    padding: 0 2rem 0;
+    margin: 0 auto 3.9rem; }
+    .feedback__title::before {
+      right: 16rem; }
+  .feedback__text {
+    font-size: 2rem;
+    margin: 0 auto 2rem;
+    padding: 0 2rem; }
+  .feedback__img {
+    margin: 0px auto 1rem; } }
 
 .introducing {
   background: linear-gradient(180deg, #E4DDFF 0%, rgba(255, 255, 255, 0) 100%);
@@ -880,21 +972,30 @@ button {
     padding: 0 6rem; } }
 
 @media screen and (max-width: 575px) {
+  .introducing__content {
+    margin: 2rem auto 0; }
   .introducing__title {
     font-size: 2.4rem; }
     .introducing__title::after {
-      right: 4rem; }
-  .introducing__img {
-    max-width: 84vw;
-    display: block;
-    margin: 0 auto; }
+      content: none; }
+  .introducing__text {
+    font-size: 1.6rem;
+    max-width: unset;
+    padding: 0px 2rem 0;
+    margin: 3rem auto 2rem; }
+  .introducing__img-wrap {
+    display: none; }
   .item {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    margin: 0 auto 2rem;
+    padding: 0 3rem; }
     .item__title {
-      font-size: 2.2rem; }
+      font-size: 2rem; }
     .item__description {
-      margin: 0 auto; } }
+      margin: 0 auto;
+      max-width: unset;
+      padding: 0 1rem 0; } }
 
 .become {
   background-image: url("../imgs/rings2.png");
@@ -950,7 +1051,8 @@ button {
     background-image: none; }
     .become__img {
       max-width: 15.6rem;
-      max-height: 15.6rem; }
+      max-height: 15.6rem;
+      margin-top: unset; }
     .become__title {
       font-size: 2.4rem;
       margin-bottom: 5.6rem; }
