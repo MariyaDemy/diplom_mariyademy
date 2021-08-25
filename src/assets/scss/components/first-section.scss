@@ -14,11 +14,15 @@
     
 
     &::after {
-        content: url("../imgs/wave1.png");
+        content: '';
+        background-image: url(../imgs/wave1.png);
         position: absolute;
-        bottom: -0.9rem;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 95rem;
         z-index: 1;
-        
+        background-size: cover;        
     }
 
     &__content {
@@ -106,9 +110,15 @@
 
 }
 
+
+
 @media screen and (max-width: $md) {
 
     .first-section {
+
+        &::after {
+            top: 78rem;
+        }
 
         max-height: 92.6rem;
 

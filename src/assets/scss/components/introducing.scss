@@ -84,6 +84,33 @@
     }
 }
 
+@media screen and (max-width: $xlg) {
+
+    .introducing {
+
+        &__title {
+
+            &::after {
+                right: 63rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $lg) {
+
+    .introducing {
+
+        &__title {
+
+            &::after {
+                right: 36rem;
+            }
+        }
+    }
+}
+
+
 @media screen and (max-width: $md) {
 
     .introducing {

@@ -7,9 +7,15 @@
     overflow: hidden;
 
     &::after {
-        content: url("../imgs/wave3.png");
+        content: '';
+        background-image: url(../imgs/wave3.png);
         position: absolute;
-        bottom: -1rem;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        top: 83rem;
+        z-index: 1;
+        background-size: cover;
     }
 
     &__wrapper {
@@ -82,6 +88,11 @@
 @media screen and (max-width: $md) {
 
     .feedback {
+
+        &::after {
+            top: 69rem;
+        }
+
         &__content {
             margin: 0 0 13.8rem;
         }
@@ -92,10 +103,15 @@
 
         .feedback {
 
+            &::after {
+                top: 44rem;
+            }
+
             &__content {
                 margin: 0 0 7.8rem;
                 padding: 3.7rem 0 0;
             }
+
             &__title {
                 font-size: 3.4rem;
                 margin: 0 auto 6.9rem;
@@ -117,6 +133,10 @@
 @media screen and (max-width: $xs) {
 
     .feedback {
+
+        &::after {
+            display: none;
+        }
 
         &__content {
             margin: 0 0 2.8rem;
